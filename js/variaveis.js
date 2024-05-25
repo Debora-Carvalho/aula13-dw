@@ -61,31 +61,37 @@ console.log(local,global)
 //nao é possível chamar uma variavel fora do escopo
 
 
-//let, var e const 
+//var, let e const 
 function teste_var(){
     var x = 10
-    if (x==10){
+    if (x){
         var x = 5;
         console.log(x)
     }
     console.log(x)
 }
+teste_var()
 
 function teste_let(){
     let x = 10
-    if (x==10){
+    if (x){
         let x = 5;
         console.log(x)
     }
+    //variaveis do tipo constante nao permite re-atribuicao ed valor
+    //x = 11
     console.log(x)
-}
+}  //utilizar let como variavel é uma boa prática, var nao é mais utilizado
+
+teste_let()
 
 function teste_const(){
     const x = 10
-    if (x==10){
+    if (x){
         const x = 5;
         console.log(x)
     }
     console.log(x)
-}
+} 
+teste_const()
 
